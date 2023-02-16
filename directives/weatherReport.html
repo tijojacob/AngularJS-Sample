@@ -1,0 +1,12 @@
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-heading">
+                {{convertToDate({ dt : weatherDay.dt}) | date : dateFormat}}
+            </h3>
+            <h3 class="panel-heading">
+                Daytime Temperature: {{convertToCel({dayTimetemp : weatherDay.main.temp})}} &#8451                
+            </h3>
+        </div>
+    </div>        
+</div>

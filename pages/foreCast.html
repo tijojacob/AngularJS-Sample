@@ -1,0 +1,8 @@
+<h1>This is Forecast for {{city}}</h1>
+<hr>
+No. of Entries :  <a href="#/foreCast/2" ng-class="{'bg-primary' : days ==='2'}">2</a> |
+        <a href="#/foreCast/4" ng-class="{'bg-primary' : days ==='4'}">4</a> |
+        <a href="#/foreCast/6" ng-class="{'bg-primary' : days ==='6'}">6</a>
+<div ng-repeat="w in weatherResult.list" >
+   <weather-report weather-day="w" convert-to-cel="converttoCelcius(dayTimetemp)" convert-to-date="returntoDate(dt)" date-format="MMM dd, yyyy : hh:mm:ss a"></weather-report>
+</div>
